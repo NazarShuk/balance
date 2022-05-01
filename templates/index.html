@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        h1{font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; color:white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+h2{font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; color:white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+body{background-color: #46B9EB;}
+button{
+appearance: none;
+background-color: #2ea44f;
+border-radius: 6px;
+box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+font-size: 24x;
+font-weight: 600;
+line-height: 32px;
+height: 32px;
+width: 32px;
+
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+vertical-align: middle;
+border: 1px solid rgba(27, 31, 35, .15);
+white-space: nowrap;}
+input{width: 100%; font-size:24px; background-color: white;}
+iframe{width:100%; height:fit-content}
+
+    </style>
+    
+</head>
+<body>
+    <center><h1>Bebra card</h1></center>
+    
+    <script>// Set the date we're counting down to
+        var countDownDate = new Date("Apr 30, 2022 15:30:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "д. " + hours + "ч. "
+                + minutes + "м. " + seconds + "с. ";
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "ОТКЛЮЧЕНИЕ";
+            }
+        }, 1000);
+        var blink = 
+            document.getElementById('demo');
+         </script>
+    <center><h1>{{name}}</h1></center>
+    <hr>
+    <center><h2>{{mon}} UAH</h2></center>
+
+    
+    <center>
+        <form method="post">
+        <button style="height:40px; width:80px;" name="sendb" value="Отправить">Отправить</button>
+        <button style="height:40px; width:80px;" name="sendb" value="Запросить">Запросить</button>
+        <button style="height:40px; width:80px;" name="sendb" value="Робота">Робота</button>
+        </form>
+    </center>
+    
+    <script>setInterval(function(){ location.reload() }, 3000);</script>
+    
+</body>
+</html>

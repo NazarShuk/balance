@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <style>
+        h1{font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; color:white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+h2{font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; color:white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+body{background-color: #46B9EB;}
+button{
+appearance: none;
+background-color: #2ea44f;
+border-radius: 6px;
+box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+font-size: 14px;
+font-weight: 600;
+line-height: 32px;
+height: 32px;
+width: 32px;
+
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+vertical-align: middle;
+border: 1px solid rgba(27, 31, 35, .15);
+white-space: nowrap;}
+input{width: 100%; font-size:24px; background-color: white;}
+    </style>
+    
+</head>
+<body>
+    
+    <center><h1>Робота</h1></center>
+    <center><h2>Делайте обьявления про вашу роботу</h2></center>
+    <center><h2>Оповещение прийдет в телеграм</h2></center>
+    <center><h2>{{mon}} UAH</h2></center>
+    
+    
+    
+        <form method="post">
+            <center><input type="text" placeholder="Имя роботы" name="name"></center>
+            <center><input type="text" placeholder="Что вы можете сделать" name="desc"></center>
+            <center><input type="datetime" placeholder="Срок (до скольки вы будете ждать)" name="time"></center>
+            <center><input type="number" placeholder="Цена (в гривнах)" name="cost"></center>
+            <center><button style="height:40px; width:80px;" name="butt" value="Готово">Готово</button></center>
+        </form>
+    
+</body>
+</html>
